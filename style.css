@@ -41,11 +41,8 @@ body {
     /* Top: 0, Right: 20px, Bottom: 20px, Left: 20px */
     /* Adds space inside the edges */
 
-    /* Background layout setup with root slash and !important to override 98.css framework */
-   /* background-image: url("/bck-crackle.gif") !important;
-    /* !important = override everything else */
-   /* background-repeat: repeat !important;
-    background-color: #000000 !important;
+
+    background-color: #8f8877;
 
     /* Forces background tracking trail coverage over the whole view monitor */
     min-height: 100vh;
