@@ -1,3 +1,17 @@
+const contentDiv = document.getElementById("contentDiv");
+
+function appendImg(src, className, container, styles = {}) {
+    const img = document.createElement("img");
+    img.src = src;
+    img.className = className;
+
+    // Apply custom styles if provided
+    if (styles.width) img.style.width = styles.width + "px";
+    if (styles.height) img.style.height = styles.height + "px";
+
+    container.appendChild(img);
+}
+
 // carousel aka infinite Slideshow in Belt Loop form
 const slideshow = document.createElement("div");
 slideshow.className = "slideshow";
@@ -18,7 +32,8 @@ appendImg("/about/beanie3.gif", "decoration", contentDiv);
 
 /* Bullshit extras go here*/
 // peepy badge
+
 appendImg("peepy.gif", "scroll button", contentDiv, {
-    width: 140,
-    height: 35,
+    width: 80,
+    height: 22,
 });
