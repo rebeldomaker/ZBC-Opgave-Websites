@@ -15,3 +15,10 @@ contentDiv.appendChild(slideshow);
 
 appendImg("/about/purpleblood.gif", "divider", contentDiv);
 appendImg("/about/beanie3.gif", "decoration", contentDiv);
+
+/* Bullshit extras go here*/
+// peepy badge
+appendImg("peepy.gif", "scroll button", contentDiv, {
+    width: 140,
+    height: 35,
+});
