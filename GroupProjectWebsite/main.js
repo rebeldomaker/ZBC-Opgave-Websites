@@ -34,6 +34,6 @@ contentDiv.appendChild(slideshow);
 // peepy badge
 
 appendImg("peepy.gif", "scroll button", contentDiv, {
-    width: 80,
+    width: 100,
     height: 30,
 });
