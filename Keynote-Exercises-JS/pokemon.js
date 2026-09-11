@@ -1,3 +1,4 @@
+console.log(`Welcome to the mini Pokemon console game!\nThis fangame is written purely in JavaScript for learning purposes in school.\n Please Nintendo, don't come for my ass... kthx!`);
 
 // List of Pokemon to choose from. The Pokemon class is introducing OOP in JS
 const pokemonListPlayer = [ // List of pokemon to choose from for player, 3 out of 6
@@ -166,6 +167,29 @@ const typeAdvantage = {
 ];
 
 function selectTeam() { /* user picks 3 */ }
+/*    player_team = []
+    print("Choose 3 pokemon:")
+    for i, pokemon in enumerate(pokemon_list_player):
+        print(f"{i+1}. {pokemon['name']}")
+
+    while len(player_team) < 3:
+        choice = int(input("Pick a pokemon number: ")) - 1
+        player_team.append(pokemon_list_player[choice])
+
+    return player_team*/
+
+console.log(`Choose 3 Pokemon you will use.\n You have 6 options to choose from.\nPick wisely!\n`);
+// pseudo-code to help break down my ideas before implementing it in JS
+// num = in range(1, 6)
+// for i in pokemonListPlayer:
+//      print(f"{num}.) {pokemon.name}, + ({pokemon.type})\n")
+//      pkmnUserPick = input("type the number that corresponds to each pokemon you want to pick, then press enter")*/
+console.log(`Pokemon available:\n1.)${} \n\n`);
 function computerTeam() { /* random 3 */ }
+// import random
+// for i in pokemonListNPC (range(1, 3)):
+//      PC randomly chooses 3 out of 6 pokemon options, it is random each time the game runs so as to not repeat the same pokemon each playthru
 function calculateDamage() { /* damage logic */ }
+// todo i will write pseudo-code for this later, TBA
 function battleLoop() { /* main game loop */ }
+// todo i will write pseudo-code for this later, TBA
