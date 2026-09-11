@@ -1,4 +1,6 @@
-console.log('Welcome!');
+// namespace
+
+// console.log('Welcome!');
 
 const furryOC = {
     name: "Zenith",
@@ -14,3 +16,4 @@ const furryOC = {
 };
 
 furryOC.info();
+
