@@ -164,10 +164,8 @@ const typeAdvantage = {
     "Normal": { strong: [], weak: ["Fighting"] }
 };
 
-];
-
-function selectTeam() { /* user picks 3 */ }
-/*    player_team = []
+function selectTeam() { /* user picks 3 */
+    /*    player_team = []
     print("Choose 3 pokemon:")
     for i, pokemon in enumerate(pokemon_list_player):
         print(f"{i+1}. {pokemon['name']}")
@@ -178,18 +176,40 @@ function selectTeam() { /* user picks 3 */ }
 
     return player_team*/
 
+    // JavaScript implementation:
+    let playerTeam = [];
+    console.log("Choose 3 pokemon:");
+    for (let i = 0; i < pokemonListPlayer.length; i++) {
+        console.log(`${i+1}. ${pokemonListPlayer[i].name} (${pokemonListPlayer[i].type})`);
+    }
+    while (playerTeam.length < 3) {
+        let choice = parseInt(prompt("Pick a pokemon number: ")) - 1;
+        playerTeam.push(pokemonListPlayer[choice]);
+    }
+    return playerTeam;
+}
+
 console.log(`Choose 3 Pokemon you will use.\n You have 6 options to choose from.\nPick wisely!\n`);
-// pseudo-code to help break down my ideas before implementing it in JS
-// num = in range(1, 6)
-// for i in pokemonListPlayer:
-//      print(f"{num}.) {pokemon.name}, + ({pokemon.type})\n")
-//      pkmnUserPick = input("type the number that corresponds to each pokemon you want to pick, then press enter")*/
-console.log(`Pokemon available:\n1.)${} \n\n`);
-function computerTeam() { /* random 3 */ }
-// import random
-// for i in pokemonListNPC (range(1, 3)):
-//      PC randomly chooses 3 out of 6 pokemon options, it is random each time the game runs so as to not repeat the same pokemon each playthru
-function calculateDamage() { /* damage logic */ }
-// todo i will write pseudo-code for this later, TBA
-function battleLoop() { /* main game loop */ }
-// todo i will write pseudo-code for this later, TBA
+console.log(`Pokemon available:\n1.)${pokemonListPlayer[0].name} \n\n`);
+
+function computerTeam() { /* random 3 */
+    // import random
+    // for i in pokemonListNPC (range(1, 3)):
+    //      PC randomly chooses 3 out of 6 pokemon options, it is random each time the game runs so as to not repeat the same pokemon each playthru
+
+    // JavaScript implementation:
+    let npcTeam = [];
+    for (let i = 0; i < 3; i++) {
+        let randomIndex = Math.floor(Math.random() * pokemonListNPC.length);
+        npcTeam.push(pokemonListNPC[randomIndex]);
+    }
+    return npcTeam;
+}
+
+function calculateDamage() { /* damage logic */
+    // todo i will write pseudo-code for this later, TBA
+}
+
+function battleLoop() { /* main game loop */
+    // todo i will write pseudo-code for this later, TBA
+}
